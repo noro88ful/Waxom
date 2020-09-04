@@ -1,0 +1,47 @@
+/*Функции*//*==========================================================*/
+/*.rotate($deg){-moz-transform: rotate($deg);-ms-transform: rotate($deg);-webkit-transform: rotate($deg);-o-transform: rotate($deg);transform: rotate($deg);}
+.scale($num){-moz-transform: scale($num);-ms-transform: scale($num);-webkit-transform: scale($num);-o-transform: scale($num);transform: scale($num);}
+.skew($num){-moz-transform: skewX($num);-ms-transform: skewX($num);-webkit-transform: skewX($num);-o-transform: skewX($num);transform: skewX($num);}
+.cnt($h){display: flex;flex-direction: column;height: $h;text-align: center;align-items: stretch;justify-content: center;}
+.tr($x,$y,$z){transform: translate3d($x,$y,$z);}
+.flexbox(){display: -webkit-box;display: -moz-box;display: -ms-flexbox;display: -webkit-flex;display: flex;font-size: 0;}
+.flexorder($val){-webkit-box-ordinal-group: $val;-moz-box-ordinal-group: $val;-ms-box-ordinal-group: $val;-webkit-order: $val;order: $val;}
+*/
+/*Шрифт по умолчанию*//*==========================================================*/
+
+/*Montserrat*/
+
+/*Переменные*//*==========================================================*/
+/*:root {
+	--minwidth:320px;
+	--mw:950;
+	--md1:var(--mw)+12; //962
+	--md2:991.98;
+	--md3:767.98;
+	--md4:479.98;
+};*/
+
+/*Обнуление*//*==========================================================*/
+*{padding: 0;margin: 0;border: 0;}
+*,*:before,*:after{-moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box;}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+section,nav,footer,header,aside{display: block;}
+html,body{height: 100%;margin: 0;padding: 0;min-width: 320px;position: relative;width: 100%;color: #000;}
+body{font-size: 100%;line-height: 1;font-size: 14px;font-family: "Montserrat";-ms-text-size-adjust: 100%;-moz-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;}
+body.lock{overflow: hidden;};@media (max-width: 767.98px){body.lock{width: 100%;position: fixed;overflow: hidden;}}
+input,button,textarea{font-family: "Montserrat";}
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner{padding: 0;border:0;}
+a,a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+h1,h2,h3,h4,h5,h6{font-size: inherit;font-weight: inherit;}
+
+/*Основная сетка*//*==========================================================*/
+._container{max-width: 1240px;margin: 0 auto;width: 100%;}
+@media (max-width: 1252px){._container{max-width: 970px;}}
+@media (max-width: 992.98px){._container{max-width: 750px;}}
+@media (max-width: 767.98px){._container{max-width: none;padding: 0 10px;}}
